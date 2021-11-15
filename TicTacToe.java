@@ -11,11 +11,11 @@ public class TicTacToe {
     
     public static void game(){
     
-    char repeat = 'Y';
+    bool repeat = true;
     
     Scanner input = new Scanner(System.in);
     
-    while(repeat == 'Y' || repeat == 'y'){
+    while(repeat){
     
     char[][] gameBoard = {                   // Create a new char array called gameboard each loop to clean up the previous game
                 {' ', '|', ' ', '|', ' '},
